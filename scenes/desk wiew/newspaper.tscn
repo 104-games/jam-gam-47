@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cea4lw7msy643"]
 
 [ext_resource type="Texture2D" uid="uid://bb1kehjl4igop" path="res://assets/graphics/desk wiew/newspaper/newspaper_placeholder.jpg" id="1_5qsvw"]
-[ext_resource type="Script" uid="uid://cvdkbo286olo3" path="res://assets/coding/scenes/desk wiew/newspaper.gd" id="2_gldnv"]
+[ext_resource type="Script" uid="uid://cvdkbo286olo3" path="res://coding/newspaper.gd" id="2_gldnv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8edu4"]
 size = Vector2(540, 360)

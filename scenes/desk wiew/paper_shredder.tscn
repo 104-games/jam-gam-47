@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bqgif11jsv6mi"]
 
 [ext_resource type="Texture2D" uid="uid://cyauqott1aiyx" path="res://assets/graphics/desk wiew/paper shredder.jpg" id="1_5s4d6"]
-[ext_resource type="Script" uid="uid://bihsd460ioc6m" path="res://assets/coding/scenes/desk wiew/paper_shredder.gd" id="2_uus36"]
+[ext_resource type="Script" uid="uid://bihsd460ioc6m" path="res://coding/paper_shredder.gd" id="2_uus36"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ca3s1"]
 animations = [{
