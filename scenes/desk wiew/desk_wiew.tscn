@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://do23y4cqs8w0a"]
 
 [ext_resource type="Texture2D" uid="uid://cxy7t4c80qsd4" path="res://assets/graphics/desk wiew/dek_bg_placeholder.jpg" id="1_b0ych"]
-[ext_resource type="PackedScene" uid="uid://cea4lw7msy643" path="res://assets/coding/scenes/desk wiew/newspaper.tscn" id="2_swd01"]
-[ext_resource type="PackedScene" uid="uid://biepbkld7gmmm" path="res://assets/coding/scenes/desk wiew/letter.tscn" id="3_8fqt6"]
-[ext_resource type="PackedScene" uid="uid://bqgif11jsv6mi" path="res://assets/coding/scenes/desk wiew/paper_shredder.tscn" id="4_8fqt6"]
+[ext_resource type="PackedScene" uid="uid://cea4lw7msy643" path="res://scenes/desk wiew/newspaper.tscn" id="2_swd01"]
+[ext_resource type="PackedScene" uid="uid://biepbkld7gmmm" path="res://scenes/desk wiew/letter.tscn" id="3_8fqt6"]
+[ext_resource type="PackedScene" uid="uid://bqgif11jsv6mi" path="res://scenes/desk wiew/paper_shredder.tscn" id="4_8fqt6"]
 
 [node name="desk_wiew" type="Node2D"]
 

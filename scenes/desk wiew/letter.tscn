@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://biepbkld7gmmm"]
 
-[ext_resource type="Script" uid="uid://p16mlmdlm501" path="res://assets/coding/scenes/desk wiew/letter.gd" id="1_5s03l"]
+[ext_resource type="Script" uid="uid://p16mlmdlm501" path="res://coding/letter.gd" id="1_5s03l"]
 [ext_resource type="Texture2D" uid="uid://baa04lxoude1s" path="res://assets/graphics/desk wiew/letters/envelopes.jpg" id="1_7j2j7"]
 [ext_resource type="Texture2D" uid="uid://7jb4xgmsa6fs" path="res://assets/graphics/desk wiew/letters/letter placeholder.jpg" id="2_5s03l"]
 
