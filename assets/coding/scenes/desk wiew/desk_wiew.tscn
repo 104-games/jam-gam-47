@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://do23y4cqs8w0a"]
+
+[ext_resource type="Texture2D" uid="uid://cxy7t4c80qsd4" path="res://assets/graphics/desk wiew/dek_bg_placeholder.jpg" id="1_b0ych"]
+[ext_resource type="PackedScene" uid="uid://cea4lw7msy643" path="res://assets/coding/scenes/desk wiew/newspaper.tscn" id="2_swd01"]
+[ext_resource type="PackedScene" uid="uid://biepbkld7gmmm" path="res://assets/coding/scenes/desk wiew/letter.tscn" id="3_8fqt6"]
+[ext_resource type="PackedScene" uid="uid://bqgif11jsv6mi" path="res://assets/coding/scenes/desk wiew/paper_shredder.tscn" id="4_8fqt6"]
+
+[node name="desk_wiew" type="Node2D"]
+
+[node name="bg" type="Sprite2D" parent="."]
+position = Vector2(481, 270.5)
+scale = Vector2(1.5719, 1.32598)
+texture = ExtResource("1_b0ych")
+
+[node name="newspaper" parent="." instance=ExtResource("2_swd01")]
+position = Vector2(142.5, 248)
+scale = Vector2(0.635185, 0.705556)
+
+[node name="letter" parent="." instance=ExtResource("3_8fqt6")]
+position = Vector2(584, 211)
+scale = Vector2(0.7, 0.7)
+
+[node name="paper_shredder" parent="." instance=ExtResource("4_8fqt6")]
+position = Vector2(809, 452)
+scale = Vector2(0.364379, 0.346491)

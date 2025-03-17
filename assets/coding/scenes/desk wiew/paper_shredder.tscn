@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://bqgif11jsv6mi"]
+
+[ext_resource type="Texture2D" uid="uid://cyauqott1aiyx" path="res://assets/graphics/desk wiew/paper shredder.jpg" id="1_5s4d6"]
+[ext_resource type="Script" uid="uid://bihsd460ioc6m" path="res://assets/coding/scenes/desk wiew/paper_shredder.gd" id="2_uus36"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ca3s1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_5s4d6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_5s4d6")
+}],
+"loop": true,
+"name": &"shred",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uus36"]
+size = Vector2(612, 455)
+
+[node name="paper_shredder" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_ca3s1")
+animation = &"shred"
+script = ExtResource("2_uus36")
+
+[node name="scanarea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="scanarea"]
+position = Vector2(-1, 0.5)
+shape = SubResource("RectangleShape2D_uus36")

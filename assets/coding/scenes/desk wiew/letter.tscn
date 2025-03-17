@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3 uid="uid://biepbkld7gmmm"]
+
+[ext_resource type="Script" uid="uid://p16mlmdlm501" path="res://assets/coding/scenes/desk wiew/letter.gd" id="1_5s03l"]
+[ext_resource type="Texture2D" uid="uid://baa04lxoude1s" path="res://assets/graphics/desk wiew/letters/envelopes.jpg" id="1_7j2j7"]
+[ext_resource type="Texture2D" uid="uid://7jb4xgmsa6fs" path="res://assets/graphics/desk wiew/letters/letter placeholder.jpg" id="2_5s03l"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_buwhn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_7j2j7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_5s03l")
+}],
+"loop": false,
+"name": &"opening",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tokc7"]
+size = Vector2(460, 343)
+
+[node name="letter" type="Node2D"]
+script = ExtResource("1_5s03l")
+
+[node name="envelope" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_buwhn")
+autoplay = "default"
+
+[node name="scanbox" type="Area2D" parent="envelope"]
+
+[node name="scanarea" type="CollisionShape2D" parent="envelope/scanbox"]
+position = Vector2(0, 1.5)
+shape = SubResource("RectangleShape2D_tokc7")
+
+[connection signal="animation_finished" from="envelope" to="." method="_on_envelope_animation_finished"]
+[connection signal="mouse_entered" from="envelope/scanbox" to="." method="_on_scanbox_mouse_entered"]
+[connection signal="mouse_exited" from="envelope/scanbox" to="." method="_on_scanbox_mouse_exited"]
