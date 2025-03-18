@@ -23,6 +23,10 @@ globals="*res://coding/globals.gd"
 window/size/viewport_width=960
 window/size/viewport_height=540
 
+[editor]
+
+movie_writer/movie_file="C:/Users/paole/Desktop/coding/godot/jam-gam-47/show.avi"
+
 [input]
 
 left_click={

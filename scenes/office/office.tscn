@@ -1,0 +1,174 @@
+[gd_scene load_steps=10 format=3 uid="uid://e4f8q4nvueie"]
+
+[ext_resource type="Texture2D" uid="uid://c0ovm20nk00ks" path="res://assets/graphics/main window/bg_placeholder.png" id="1_ql6sr"]
+[ext_resource type="Script" uid="uid://uyst3i6mij2j" path="res://scenes/office/office.gd" id="1_ul364"]
+[ext_resource type="Texture2D" uid="uid://chtylad0kw077" path="res://assets/graphics/main window/phone_placeholder.jpg" id="3_66du1"]
+[ext_resource type="Texture2D" uid="uid://da2ieywc1gedp" path="res://assets/graphics/main window/text_bubble_placheholder.jpg" id="4_art4y"]
+[ext_resource type="Script" uid="uid://c7gvq241mxs5e" path="res://scenes/office/text_bubble.gd" id="5_8d8gp"]
+[ext_resource type="Script" uid="uid://bftyhv5l2t7mg" path="res://scenes/office/day_start_animation.gd" id="6_art4y"]
+
+[sub_resource type="Animation" id="Animation_8d8gp"]
+resource_name = "fade"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bg:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("day:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1, 2.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_2u0tt"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bg:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("day:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sf0ao"]
+_data = {
+&"RESET": SubResource("Animation_2u0tt"),
+&"fade": SubResource("Animation_8d8gp")
+}
+
+[node name="office" type="Node2D"]
+script = ExtResource("1_ul364")
+
+[node name="bg" type="Sprite2D" parent="."]
+position = Vector2(481.5, 271.5)
+scale = Vector2(0.895814, 0.889803)
+texture = ExtResource("1_ql6sr")
+
+[node name="to_desk" type="Button" parent="."]
+offset_left = 587.0
+offset_top = 249.0
+offset_right = 771.0
+offset_bottom = 427.0
+flat = true
+
+[node name="answer_phone" type="Button" parent="."]
+offset_left = 601.0
+offset_top = 373.0
+offset_right = 640.0
+offset_bottom = 415.0
+flat = true
+
+[node name="Sprite2D" type="Sprite2D" parent="answer_phone"]
+position = Vector2(16, 18)
+scale = Vector2(0.043, 0.0526693)
+texture = ExtResource("3_66du1")
+
+[node name="text_bubble" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(299, 383.5)
+scale = Vector2(0.670175, 0.552778)
+texture = ExtResource("4_art4y")
+script = ExtResource("5_8d8gp")
+
+[node name="timer" type="Timer" parent="text_bubble"]
+wait_time = 0.1
+
+[node name="text" type="RichTextLabel" parent="text_bubble"]
+offset_left = -254.0
+offset_top = -151.0
+offset_right = 243.0
+offset_bottom = 71.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "sium"
+
+[node name="pc" type="Button" parent="."]
+offset_left = 679.0
+offset_top = 324.0
+offset_right = 713.0
+offset_bottom = 412.0
+rotation = -2.61625
+flat = true
+
+[node name="day_start_animation" type="Node2D" parent="."]
+visible = false
+script = ExtResource("6_art4y")
+
+[node name="bg" type="ColorRect" parent="day_start_animation"]
+offset_right = 962.0
+offset_bottom = 543.0
+color = Color(0, 0, 0, 1)
+
+[node name="day" type="RichTextLabel" parent="day_start_animation"]
+offset_left = 116.0
+offset_top = 135.0
+offset_right = 831.0
+offset_bottom = 374.0
+theme_override_font_sizes/normal_font_size = 100
+text = "MONDAY 8 AM"
+
+[node name="anim" type="AnimationPlayer" parent="day_start_animation"]
+libraries = {
+&"": SubResource("AnimationLibrary_sf0ao")
+}
+
+[connection signal="pressed" from="to_desk" to="." method="_on_to_desk_pressed"]
+[connection signal="pressed" from="answer_phone" to="." method="_on_answer_phone_pressed"]
+[connection signal="timeout" from="text_bubble/timer" to="text_bubble" method="_on_timer_timeout"]
+[connection signal="pressed" from="pc" to="." method="_on_pc_pressed"]
+[connection signal="animation_finished" from="day_start_animation/anim" to="." method="_on_anim_animation_finished"]
