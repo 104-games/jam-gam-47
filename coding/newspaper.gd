@@ -7,7 +7,7 @@ var is_dragged = false
 func _ready():
 	pass
 
-func _process(delta):
+func _process(_delta):
 	if Input.is_action_just_pressed("left_click") and is_dragged == false: #if mouse is clicked
 		if mouse_in == true: #if mouse is inside the area
 			is_dragged = true
