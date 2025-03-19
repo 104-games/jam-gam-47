@@ -36,7 +36,7 @@ func _on_choiche_3_pressed():
 	selected = 2
 
 func _on_print_pressed():
-	globals.pubblic_reputation += conseguences[day][selected].x
-	globals.money_level += conseguences[day][selected].y
-	globals.printed_doc = true
+	
+	globals.printed_doc = conseguences[day][selected]
+	globals.desk_items.append("document")
 	get_tree().change_scene_to_file("res://scenes/desk wiew/desk_wiew.tscn")
