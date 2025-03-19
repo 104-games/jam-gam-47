@@ -7,6 +7,45 @@
 [ext_resource type="Script" uid="uid://c7gvq241mxs5e" path="res://scenes/office/text_bubble.gd" id="5_8d8gp"]
 [ext_resource type="Script" uid="uid://bftyhv5l2t7mg" path="res://scenes/office/day_start_animation.gd" id="6_art4y"]
 
+[sub_resource type="Animation" id="Animation_2u0tt"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bg:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("day:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
 [sub_resource type="Animation" id="Animation_8d8gp"]
 resource_name = "fade"
 length = 3.0
@@ -47,45 +86,6 @@ tracks/2/keys = {
 "values": [true]
 }
 
-[sub_resource type="Animation" id="Animation_2u0tt"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("bg:self_modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("day:self_modulate")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath(".:visible")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_sf0ao"]
 _data = {
 &"RESET": SubResource("Animation_2u0tt"),
@@ -94,6 +94,21 @@ _data = {
 
 [node name="office" type="Node2D"]
 script = ExtResource("1_ul364")
+
+[node name="FmodBankLoader" type="FmodBankLoader" parent="."]
+bank_paths = ["res://FMOD/jamgam/Build/Desktop/Master.bank", "res://FMOD/jamgam/Build/Desktop/Master.strings.bank"]
+
+[node name="FmodListener2D" type="FmodListener2D" parent="."]
+listener_index = 1
+is_locked = true
+position = Vector2(465, 268)
+
+[node name="FmodEventEmitter2D" type="FmodEventEmitter2D" parent="."]
+event_name = "event:/SFX_OfficeAmbience"
+event_guid = "{afcd13a5-55e3-4c08-8b35-4d6f86ece19d}"
+autoplay = true
+position = Vector2(481.5, 271.5)
+scale = Vector2(0.895814, 0.889803)
 
 [node name="bg" type="Sprite2D" parent="."]
 position = Vector2(481.5, 271.5)

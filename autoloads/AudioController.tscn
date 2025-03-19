@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dqwmav6u236dq"]
+
+[node name="AudioController" type="Node2D"]
+
+[node name="FmodBankLoader" type="FmodBankLoader" parent="."]
+bank_paths = ["res://FMOD/jamgam/Build/Desktop/Master.strings.bank", "res://FMOD/jamgam/Build/Desktop/Master.bank"]
+
+[node name="FmodListener2D" type="FmodListener2D" parent="."]
+
+[node name="FmodEventEmitter2D" type="FmodEventEmitter2D" parent="."]
+event_name = "event:/SFX_OfficeAmbience"
+event_guid = "{afcd13a5-55e3-4c08-8b35-4d6f86ece19d}"
+autoplay = true
