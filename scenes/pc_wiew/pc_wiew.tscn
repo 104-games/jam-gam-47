@@ -1,0 +1,67 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4j75r7ye2v3h"]
+
+[ext_resource type="Script" uid="uid://brk4xxrvwxw2s" path="res://scenes/pc_wiew/pc_wiew.gd" id="1_kejl4"]
+[ext_resource type="Texture2D" uid="uid://dv65yg0gssf4e" path="res://assets/graphics/pc wiew/pc_placeholder.jpg" id="1_ora4m"]
+
+[node name="pc_wiew" type="Node2D"]
+script = ExtResource("1_kejl4")
+
+[node name="bg" type="Sprite2D" parent="."]
+position = Vector2(482, 272.5)
+scale = Vector2(0.185794, 0.116554)
+texture = ExtResource("1_ora4m")
+
+[node name="choiche" type="RichTextLabel" parent="."]
+offset_left = 281.0
+offset_top = 48.0
+offset_right = 645.0
+offset_bottom = 136.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "placeholde question?"
+
+[node name="choiche1" type="Button" parent="."]
+offset_left = 80.0
+offset_top = 120.0
+offset_right = 258.0
+offset_bottom = 197.0
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+text = "NO and do 
+the opposite
+ [++money, --opinion]"
+
+[node name="choiche2" type="Button" parent="."]
+offset_left = 392.0
+offset_top = 128.0
+offset_right = 577.0
+offset_bottom = 197.0
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+text = "yes [-money, +opinion]"
+
+[node name="choiche3" type="Button" parent="."]
+offset_left = 712.0
+offset_top = 128.0
+offset_right = 897.0
+offset_bottom = 197.0
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+text = "no [+money, -opinion]"
+
+[node name="current_selected" type="RichTextLabel" parent="."]
+visible = false
+offset_left = 360.0
+offset_top = 216.0
+offset_right = 640.0
+offset_bottom = 280.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "current choiche holder"
+
+[node name="print" type="Button" parent="."]
+offset_left = 368.0
+offset_top = 272.0
+offset_right = 584.0
+offset_bottom = 312.0
+text = "PRINT"
+
+[connection signal="pressed" from="choiche1" to="." method="_on_choiche_1_pressed"]
+[connection signal="pressed" from="choiche2" to="." method="_on_choiche_2_pressed"]
+[connection signal="pressed" from="choiche3" to="." method="_on_choiche_3_pressed"]
+[connection signal="pressed" from="print" to="." method="_on_print_pressed"]
