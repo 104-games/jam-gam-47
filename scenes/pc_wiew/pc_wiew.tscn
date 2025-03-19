@@ -7,8 +7,8 @@
 script = ExtResource("1_kejl4")
 
 [node name="bg" type="Sprite2D" parent="."]
-position = Vector2(482, 272.5)
-scale = Vector2(0.185794, 0.116554)
+position = Vector2(482, 269.5)
+scale = Vector2(0.185794, 0.117866)
 texture = ExtResource("1_ora4m")
 
 [node name="choiche" type="RichTextLabel" parent="."]

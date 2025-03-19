@@ -8,4 +8,6 @@ var current_day = 0
 
 var day_just_started = true
 
-var printed_doc = false
+var doc_info = Vector2(0,0)
+
+var desk_items = [["newspaper","letter"]]
