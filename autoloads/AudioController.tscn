@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://dqwmav6u236dq"]
+[gd_scene load_steps=2 format=3 uid="uid://dqwmav6u236dq"]
+
+[ext_resource type="Script" uid="uid://bxyiwten14tj" path="res://autoloads/ambience_controller.gd" id="1_dfi2g"]
 
 [node name="AudioController" type="Node2D"]
 
@@ -11,3 +13,6 @@ bank_paths = ["res://FMOD/jamgam/Build/Desktop/Master.strings.bank", "res://FMOD
 event_name = "event:/SFX_OfficeAmbience"
 event_guid = "{afcd13a5-55e3-4c08-8b35-4d6f86ece19d}"
 autoplay = true
+
+[node name="AmbienceController" type="Node" parent="."]
+script = ExtResource("1_dfi2g")
