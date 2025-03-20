@@ -7,6 +7,7 @@
 size = Vector2(540, 360)
 
 [node name="newspaper" type="Sprite2D"]
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_5qsvw")
 script = ExtResource("2_gldnv")
 

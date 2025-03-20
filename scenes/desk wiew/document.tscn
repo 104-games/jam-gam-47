@@ -1,0 +1,70 @@
+[gd_scene load_steps=8 format=3 uid="uid://cpfkola74decm"]
+
+[ext_resource type="Texture2D" uid="uid://jagqhxdikpss" path="res://assets/graphics/desk wiew/document placeholder.webp" id="1_1xse1"]
+[ext_resource type="Script" uid="uid://bih0b5aiyppjo" path="res://scenes/desk wiew/document.gd" id="2_vie07"]
+[ext_resource type="Texture2D" uid="uid://cybjiycbs28vr" path="res://assets/graphics/desk wiew/stamped doc placeholder.png" id="3_ux6i8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x1plv"]
+size = Vector2(272, 400)
+
+[sub_resource type="Animation" id="Animation_vie07"]
+resource_name = "fade out"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 1.83333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_ux6i8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4on6s"]
+_data = {
+&"RESET": SubResource("Animation_ux6i8"),
+&"fade out": SubResource("Animation_vie07")
+}
+
+[node name="document" type="Sprite2D"]
+texture = ExtResource("1_1xse1")
+script = ExtResource("2_vie07")
+
+[node name="area" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="area"]
+shape = SubResource("RectangleShape2D_x1plv")
+
+[node name="stamp" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-8.00006, 96.0001)
+scale = Vector2(0.126667, 0.126667)
+texture = ExtResource("3_ux6i8")
+
+[node name="anim" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_4on6s")
+}
+
+[connection signal="area_exited" from="area" to="." method="_on_area_area_exited"]
+[connection signal="mouse_entered" from="area" to="." method="_on_area_mouse_entered"]
+[connection signal="mouse_exited" from="area" to="." method="_on_area_mouse_exited"]
+[connection signal="animation_finished" from="anim" to="." method="_on_anim_animation_finished"]

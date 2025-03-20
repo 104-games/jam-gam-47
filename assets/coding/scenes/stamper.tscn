@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://sb0ckgs04rn0"]
+
+[ext_resource type="Texture2D" uid="uid://2tqdnjtrl6aj" path="res://assets/graphics/desk wiew/stamper.jpg" id="1_lxdj8"]
+[ext_resource type="Script" uid="uid://c10j52h7gs6a5" path="res://assets/coding/scenes/stamper.gd" id="2_en6ip"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c804l"]
+size = Vector2(2560, 2560)
+
+[node name="stamper" type="Sprite2D"]
+position = Vector2(32, 32)
+scale = Vector2(0.0125, 0.0125)
+texture = ExtResource("1_lxdj8")
+script = ExtResource("2_en6ip")
+
+[node name="scanbox" type="Area2D" parent="."]
+
+[node name="scan_area" type="CollisionShape2D" parent="scanbox"]
+shape = SubResource("RectangleShape2D_c804l")
+
+[connection signal="mouse_entered" from="scanbox" to="." method="_on_scanbox_mouse_entered"]
+[connection signal="mouse_exited" from="scanbox" to="." method="_on_scanbox_mouse_exited"]
