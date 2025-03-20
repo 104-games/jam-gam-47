@@ -7,8 +7,8 @@
 script = ExtResource("1_kejl4")
 
 [node name="bg" type="Sprite2D" parent="."]
-position = Vector2(482, 272.5)
-scale = Vector2(0.185794, 0.116554)
+position = Vector2(482, 269.5)
+scale = Vector2(0.185794, 0.117866)
 texture = ExtResource("1_ora4m")
 
 [node name="choiche" type="RichTextLabel" parent="."]
@@ -60,6 +60,14 @@ offset_top = 272.0
 offset_right = 584.0
 offset_bottom = 312.0
 text = "PRINT"
+
+[node name="end" type="Button" parent="."]
+visible = false
+offset_left = 400.0
+offset_top = 216.0
+offset_right = 568.0
+offset_bottom = 264.0
+text = "GO HOME"
 
 [connection signal="pressed" from="choiche1" to="." method="_on_choiche_1_pressed"]
 [connection signal="pressed" from="choiche2" to="." method="_on_choiche_2_pressed"]

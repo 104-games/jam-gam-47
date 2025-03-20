@@ -27,18 +27,19 @@ animations = [{
 size = Vector2(460, 343)
 
 [node name="letter" type="Node2D"]
+scale = Vector2(0.5, 0.5)
 script = ExtResource("1_5s03l")
 
 [node name="envelope" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_buwhn")
 autoplay = "default"
 
-[node name="scanbox" type="Area2D" parent="envelope"]
+[node name="scanbox" type="Area2D" parent="."]
 
-[node name="scanarea" type="CollisionShape2D" parent="envelope/scanbox"]
+[node name="scanarea" type="CollisionShape2D" parent="scanbox"]
 position = Vector2(0, 1.5)
 shape = SubResource("RectangleShape2D_tokc7")
 
 [connection signal="animation_finished" from="envelope" to="." method="_on_envelope_animation_finished"]
-[connection signal="mouse_entered" from="envelope/scanbox" to="." method="_on_scanbox_mouse_entered"]
-[connection signal="mouse_exited" from="envelope/scanbox" to="." method="_on_scanbox_mouse_exited"]
+[connection signal="mouse_entered" from="scanbox" to="." method="_on_scanbox_mouse_entered"]
+[connection signal="mouse_exited" from="scanbox" to="." method="_on_scanbox_mouse_exited"]

@@ -35,3 +35,6 @@ script = ExtResource("2_uus36")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="scanarea"]
 position = Vector2(-1, 0.5)
 shape = SubResource("RectangleShape2D_uus36")
+
+[connection signal="mouse_entered" from="scanarea" to="." method="_on_scanarea_mouse_entered"]
+[connection signal="mouse_exited" from="scanarea" to="." method="_on_scanarea_mouse_exited"]
