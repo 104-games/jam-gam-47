@@ -10,3 +10,4 @@ bank_paths = ["res://FMOD/jamgam/Build/Desktop/Master.strings.bank", "res://FMOD
 [node name="sfx_AmbienceEmitter" type="FmodEventEmitter2D" parent="."]
 event_name = "event:/SFX_OfficeAmbience"
 event_guid = "{afcd13a5-55e3-4c08-8b35-4d6f86ece19d}"
+autoplay = true
