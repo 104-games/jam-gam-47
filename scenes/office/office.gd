@@ -15,7 +15,7 @@ func _on_answer_phone_pressed():
 		phone_ringing = false
 
 
-func _on_anim_animation_finished(anim_name):
+func _on_anim_animation_finished(_anim_name):
 	phone_ringing = true
 	globals.approved_today = 0
 	$day_start_animation.free()

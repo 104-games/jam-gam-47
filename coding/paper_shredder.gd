@@ -1,10 +1,11 @@
 extends AnimatedSprite2D
 
+
 var mouse_in = false
 var to_remove = []
 func _process(delta):
 	if Input.is_action_just_released("left_click") and mouse_in:
-		for item in $scanarea.get_overlapping_areas():
+    for item in $scanarea.get_overlapping_areas():
 			print(item.get_parent().name)
 			to_remove.append(item.get_parent().name)
 			item.get_parent().free()

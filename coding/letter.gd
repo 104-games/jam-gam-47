@@ -13,7 +13,7 @@ var is_zoomed = false
 func _ready():
 	pass
 
-func _process(delta):
+func _process(_delta):
 	if is_opened: #if the envelope is opened the letter can be dragged
 		if Input.is_action_just_pressed("left_click") and is_dragged == false: #if mouse is clicked
 			print(mouse_in)

@@ -45,7 +45,7 @@ func _on_timer_timeout():
 	else:
 		writing = false
 
-func _process(delta):
+func _process(_delta):
 	if visible:
 		if Input.is_action_just_pressed("left_click"):
 			if writing:
