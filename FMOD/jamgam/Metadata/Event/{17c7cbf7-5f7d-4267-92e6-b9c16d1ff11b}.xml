@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{17c7cbf7-5f7d-4267-92e6-b9c16d1ff11b}">
 		<property name="color">
-			<value>Red</value>
+			<value>Purple</value>
 		</property>
 		<property name="name">
 			<value>SFX_PhoneRinging</value>
@@ -59,7 +59,14 @@
 			<destination>{9e1aaebe-cf7a-420b-8ce8-98199dba292f}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{681f8016-29af-4a90-876d-e5155448e6f4}" />
+	<object class="EventAutomatableProperties" id="{681f8016-29af-4a90-876d-e5155448e6f4}">
+		<property name="maxVoices">
+			<value>1</value>
+		</property>
+		<property name="voiceStealing">
+			<value>3</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{e5f9d1ef-2978-4f1d-864b-e9b9626e0056}" />
 	<object class="GroupTrack" id="{8785ee60-a2ca-46f9-ad1e-6d24b73f028a}">
 		<relationship name="modules">
@@ -72,6 +79,9 @@
 	<object class="Timeline" id="{675f2d6d-0544-44ae-904b-d74e28c2f9ff}">
 		<relationship name="modules">
 			<destination>{314289f2-702d-4114-a295-deecf5667317}</destination>
+		</relationship>
+		<relationship name="markers">
+			<destination>{9ca0d79d-a4b2-40c6-a436-6052c7823c55}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{6a78b7d0-1919-4c52-a6a2-282bf54948f7}">
@@ -117,6 +127,20 @@
 		</relationship>
 		<relationship name="output">
 			<destination>{6a78b7d0-1919-4c52-a6a2-282bf54948f7}</destination>
+		</relationship>
+	</object>
+	<object class="LoopRegion" id="{9ca0d79d-a4b2-40c6-a436-6052c7823c55}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="length">
+			<value>1.125</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{675f2d6d-0544-44ae-904b-d74e28c2f9ff}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{e5f9d1ef-2978-4f1d-864b-e9b9626e0056}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{bbdc9442-586d-4202-8485-69fcaaa56aa9}">

@@ -10,6 +10,7 @@ func _process(delta):
 			to_remove.append(item.get_parent().name)
 			item.get_parent().free()
 			play("shred")
+			FmodServer.play_one_shot("event:/SFX_Shred")
 		for x in to_remove:
 			if x == "newspaper":
 				globals.desk_items[globals.current_day].erase("newspaper")

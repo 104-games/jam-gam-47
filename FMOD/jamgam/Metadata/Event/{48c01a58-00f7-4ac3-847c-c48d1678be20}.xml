@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{48c01a58-00f7-4ac3-847c-c48d1678be20}">
 		<property name="color">
-			<value>Red</value>
+			<value>Purple</value>
 		</property>
 		<property name="name">
 			<value>SFX_PhoneMumble</value>
@@ -107,7 +107,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{d25e172d-1c5f-46d1-a332-792585267b2f}">
 		<property name="volume">
-			<value>-9</value>
+			<value>-20.5</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
