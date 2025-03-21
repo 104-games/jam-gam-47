@@ -61,6 +61,14 @@ offset_right = 584.0
 offset_bottom = 312.0
 text = "PRINT"
 
+[node name="end" type="Button" parent="."]
+visible = false
+offset_left = 400.0
+offset_top = 216.0
+offset_right = 568.0
+offset_bottom = 264.0
+text = "GO HOME"
+
 [connection signal="pressed" from="choiche1" to="." method="_on_choiche_1_pressed"]
 [connection signal="pressed" from="choiche2" to="." method="_on_choiche_2_pressed"]
 [connection signal="pressed" from="choiche3" to="." method="_on_choiche_3_pressed"]
