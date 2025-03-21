@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bw01w7djibpr2"
+path="res://.godot/imported/Computers, Hard Drive, Vintage, Macintosh, SE, Power On, Boot, Shutdown, Front Focus SND46713.wav-42eebd043c2fe50900d4bdfd5b3f5264.sample"
+
+[deps]
+
+source_file="res://FMOD/jamgam/Assets/Computers, Hard Drive, Vintage, Macintosh, SE, Power On, Boot, Shutdown, Front Focus SND46713.wav"
+dest_files=["res://.godot/imported/Computers, Hard Drive, Vintage, Macintosh, SE, Power On, Boot, Shutdown, Front Focus SND46713.wav-42eebd043c2fe50900d4bdfd5b3f5264.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

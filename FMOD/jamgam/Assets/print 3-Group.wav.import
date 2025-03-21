@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://5qnpqk8w012g"
+path="res://.godot/imported/print 3-Group.wav-65559d0cccafd7e3506d51479c8973ea.sample"
+
+[deps]
+
+source_file="res://FMOD/jamgam/Assets/print 3-Group.wav"
+dest_files=["res://.godot/imported/print 3-Group.wav-65559d0cccafd7e3506d51479c8973ea.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
