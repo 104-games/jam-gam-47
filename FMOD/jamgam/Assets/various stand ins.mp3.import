@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ccwoaiflugocg"
+path="res://.godot/imported/various stand ins.mp3-ac2b70e755640b6eac8a27eae8a1e46f.mp3str"
+
+[deps]
+
+source_file="res://FMOD/jamgam/Assets/various stand ins.mp3"
+dest_files=["res://.godot/imported/various stand ins.mp3-ac2b70e755640b6eac8a27eae8a1e46f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
