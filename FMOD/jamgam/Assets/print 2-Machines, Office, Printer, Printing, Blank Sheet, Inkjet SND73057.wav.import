@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://er2q3ilaxgcc"
+path="res://.godot/imported/print 2-Machines, Office, Printer, Printing, Blank Sheet, Inkjet SND73057.wav-416ea72878e9590895756c121d408d11.sample"
+
+[deps]
+
+source_file="res://FMOD/jamgam/Assets/print 2-Machines, Office, Printer, Printing, Blank Sheet, Inkjet SND73057.wav"
+dest_files=["res://.godot/imported/print 2-Machines, Office, Printer, Printing, Blank Sheet, Inkjet SND73057.wav-416ea72878e9590895756c121d408d11.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

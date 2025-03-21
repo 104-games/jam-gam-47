@@ -55,7 +55,7 @@ func _on_choiche_3_pressed():
 	selected = 2
 
 func _on_print_pressed():
-	
+	FmodServer.play_one_shot("event:/SFX_Print")
 	globals.doc_info = conseguences[day][globals.approved_today][selected]
 	globals.desk_items[day].append("document")
 	get_tree().change_scene_to_file("res://scenes/desk wiew/desk_wiew.tscn")
