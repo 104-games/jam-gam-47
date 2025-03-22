@@ -70,9 +70,19 @@ offset_bottom = 264.0
 text = "GO HOME"
 
 [node name="sfx_pc_hum" type="FmodEventEmitter2D" parent="."]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 event_name = "event:/PC_Hum"
 event_guid = "{7c8f45c2-580f-489e-8217-af260ad638ac}"
 autoplay = true
+script = null
 
 [connection signal="pressed" from="choiche1" to="." method="_on_choiche_1_pressed"]
 [connection signal="pressed" from="choiche2" to="." method="_on_choiche_2_pressed"]
