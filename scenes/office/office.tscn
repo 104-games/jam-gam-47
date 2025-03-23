@@ -129,7 +129,7 @@ texture = ExtResource("4_art4y")
 script = ExtResource("5_8d8gp")
 
 [node name="timer" type="Timer" parent="text_bubble"]
-wait_time = 0.1
+wait_time = 0.05
 
 [node name="text" type="RichTextLabel" parent="text_bubble"]
 offset_left = -254.0

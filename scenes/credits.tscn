@@ -1,0 +1,50 @@
+[gd_scene load_steps=2 format=3 uid="uid://cpxhm2t0yejlb"]
+
+[ext_resource type="Script" uid="uid://cubrwirouptyy" path="res://scenes/credits.gd" id="1_0bpdh"]
+
+[node name="credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0bpdh")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 997.0
+offset_bottom = 560.0
+color = Color(0, 0, 0, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 277.0
+offset_top = 33.0
+offset_right = 758.0
+offset_bottom = 192.0
+theme_override_font_sizes/normal_font_size = 115
+text = "CREDITS"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+offset_left = 190.0
+offset_top = 199.0
+offset_right = 830.0
+offset_bottom = 303.0
+text = "This game was made for the Jam Gam 47 game jam, by:
+- coding : 104games [Paulhack45]
+- Art : Sids
+- SFX : lawriegunning.com
+"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 391.0
+offset_top = 380.0
+offset_right = 627.0
+offset_bottom = 448.0
+theme_override_font_sizes/font_size = 38
+text = "BACK"
+flat = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
