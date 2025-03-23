@@ -146,8 +146,8 @@ func _process(_delta):
 						hide()
 					else:
 						start_write()
+						strings_completed+=1
 				else:
-					
 					globals.times_answered_phone +=1
 					if character < 1:
 						character+=1
