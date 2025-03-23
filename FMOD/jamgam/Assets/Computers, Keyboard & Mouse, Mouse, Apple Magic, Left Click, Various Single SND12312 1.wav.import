@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bbitlde64cwts"
+path="res://.godot/imported/Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 1.wav-427aea68cb2b3620406275c4e7decd30.sample"
+
+[deps]
+
+source_file="res://FMOD/jamgam/Assets/Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 1.wav"
+dest_files=["res://.godot/imported/Computers, Keyboard & Mouse, Mouse, Apple Magic, Left Click, Various Single SND12312 1.wav-427aea68cb2b3620406275c4e7decd30.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

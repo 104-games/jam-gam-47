@@ -29,4 +29,4 @@ func _on_text_bubble_phone_ringing():
 	phone_ringing = true
 	
 func get_phone_status():
-	return phone_ringing
+	return phone_ringing 

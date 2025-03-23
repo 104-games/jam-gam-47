@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{b4444024-f2e7-4fa7-ad0f-5d543a53dd07}">
-		<property name="color">
-			<value>Purple</value>
-		</property>
 		<property name="name">
 			<value>SFX_MorningStart</value>
 		</property>
@@ -63,7 +60,7 @@
 	<object class="MarkerTrack" id="{9d1c036b-2714-4219-aaf8-b9cd83b61376}" />
 	<object class="GroupTrack" id="{257a0ddf-6d47-4691-9eb5-87706e437e5e}">
 		<relationship name="modules">
-			<destination>{04f60b90-97d2-4b31-bf84-13a882b7e135}</destination>
+			<destination>{37226ad0-dfbc-44a6-bddd-6faed411d626}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{5336fbba-c8a2-4121-8c93-88ff0689aead}</destination>
@@ -71,7 +68,7 @@
 	</object>
 	<object class="Timeline" id="{d7613265-b69d-4d14-8e00-f0875a50e178}">
 		<relationship name="modules">
-			<destination>{04f60b90-97d2-4b31-bf84-13a882b7e135}</destination>
+			<destination>{37226ad0-dfbc-44a6-bddd-6faed411d626}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{56488d5c-ad7c-4a8f-99e6-80a4bca20bb1}">
@@ -91,20 +88,17 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{c163207d-f50d-4631-bf4a-866fa02825b2}" />
-	<object class="SingleSound" id="{04f60b90-97d2-4b31-bf84-13a882b7e135}">
+	<object class="SingleSound" id="{37226ad0-dfbc-44a6-bddd-6faed411d626}">
 		<property name="length">
-			<value>1.25</value>
-		</property>
-		<property name="timelockedOffset">
-			<value>12.250000000000004</value>
+			<value>3.2432500000000002</value>
 		</property>
 		<relationship name="audioFile">
-			<destination>{5275e4ec-e3bf-4edc-902d-8b20b0ec01d6}</destination>
+			<destination>{ac4d0197-416c-4140-932b-f03e93b05367}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{5336fbba-c8a2-4121-8c93-88ff0689aead}">
 		<property name="volume">
-			<value>-7</value>
+			<value>-22.5</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
@@ -122,6 +116,7 @@
 	<object class="MixerBusEffectChain" id="{a9f2b2b3-7e15-482b-9070-a28008f4868d}">
 		<relationship name="effects">
 			<destination>{7ad53154-b356-40f6-a689-e2c8c540bc62}</destination>
+			<destination>{8f2c8953-5b98-4645-8d54-a143c8c5d6b6}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{5f020cbf-59f3-4945-86e8-4633aa3274b2}" />
@@ -133,5 +128,13 @@
 	</object>
 	<object class="MixerBusPanner" id="{b93675c4-9b03-4859-b882-32d0a1b1276e}" />
 	<object class="MixerBusFader" id="{7ad53154-b356-40f6-a689-e2c8c540bc62}" />
+	<object class="SFXReverbEffect" id="{8f2c8953-5b98-4645-8d54-a143c8c5d6b6}">
+		<property name="decayTime">
+			<value>650</value>
+		</property>
+		<property name="wetLevel">
+			<value>-12</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{06c54d0b-4642-48a0-aaf4-773eadcc9fe7}" />
 </objects>
