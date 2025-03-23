@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://5o5kubdaybst"
+path="res://.godot/imported/Guns, Mechanism, Plastic Toy Gun, Rifle, Grab, Short 02 SND130829.wav-036a8d9a458326e0b5980fe849a25adf.sample"
+
+[deps]
+
+source_file="res://FMOD/jamgam/Assets/Guns, Mechanism, Plastic Toy Gun, Rifle, Grab, Short 02 SND130829.wav"
+dest_files=["res://.godot/imported/Guns, Mechanism, Plastic Toy Gun, Rifle, Grab, Short 02 SND130829.wav-036a8d9a458326e0b5980fe849a25adf.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

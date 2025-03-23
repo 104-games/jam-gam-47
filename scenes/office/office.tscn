@@ -1,11 +1,13 @@
-[gd_scene load_steps=10 format=3 uid="uid://e4f8q4nvueie"]
+[gd_scene load_steps=12 format=3 uid="uid://e4f8q4nvueie"]
 
 [ext_resource type="Script" uid="uid://uyst3i6mij2j" path="res://scenes/office/office.gd" id="1_ul364"]
 [ext_resource type="Texture2D" uid="uid://bge3qgr3ocplf" path="res://assets/graphics/main window/bgoffice.png" id="2_art4y"]
 [ext_resource type="Texture2D" uid="uid://chtylad0kw077" path="res://assets/graphics/main window/phone_placeholder.jpg" id="3_66du1"]
 [ext_resource type="Texture2D" uid="uid://da2ieywc1gedp" path="res://assets/graphics/main window/text_bubble_placheholder.jpg" id="4_art4y"]
 [ext_resource type="Script" uid="uid://c7gvq241mxs5e" path="res://scenes/office/text_bubble.gd" id="5_8d8gp"]
+[ext_resource type="Script" uid="uid://clbpmb7p0bqy3" path="res://scenes/office/sfx_dialogue.gd" id="6_2u0tt"]
 [ext_resource type="Script" uid="uid://bftyhv5l2t7mg" path="res://scenes/office/day_start_animation.gd" id="6_art4y"]
+[ext_resource type="Script" uid="uid://c0ekr2bvqhio4" path="res://scenes/office/sfx_phone_ringing.gd" id="7_8d8gp"]
 
 [sub_resource type="Animation" id="Animation_2u0tt"]
 length = 0.001
@@ -137,6 +139,11 @@ offset_bottom = 71.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 text = "sium"
 
+[node name="sfx_dialogue" type="FmodEventEmitter2D" parent="text_bubble"]
+event_name = "event:/SFX_PhoneMumble"
+event_guid = "{48c01a58-00f7-4ac3-847c-c48d1678be20}"
+script = ExtResource("6_2u0tt")
+
 [node name="pc" type="Button" parent="."]
 offset_left = 714.0
 offset_top = 327.0
@@ -167,6 +174,11 @@ fit_content = true
 libraries = {
 &"": SubResource("AnimationLibrary_sf0ao")
 }
+
+[node name="sfx_phone_ringing" type="FmodEventEmitter2D" parent="."]
+event_name = "event:/SFX_PhoneRinging"
+event_guid = "{17c7cbf7-5f7d-4267-92e6-b9c16d1ff11b}"
+script = ExtResource("7_8d8gp")
 
 [connection signal="pressed" from="to_desk" to="." method="_on_to_desk_pressed"]
 [connection signal="pressed" from="answer_phone" to="." method="_on_answer_phone_pressed"]

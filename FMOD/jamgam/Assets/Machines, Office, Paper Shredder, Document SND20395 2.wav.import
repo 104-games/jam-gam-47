@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://vp87sg2dkcyo"
+path="res://.godot/imported/Machines, Office, Paper Shredder, Document SND20395 2.wav-e644ffe5c7eb2417f53957674ba8ecfa.sample"
+
+[deps]
+
+source_file="res://FMOD/jamgam/Assets/Machines, Office, Paper Shredder, Document SND20395 2.wav"
+dest_files=["res://.godot/imported/Machines, Office, Paper Shredder, Document SND20395 2.wav-e644ffe5c7eb2417f53957674ba8ecfa.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

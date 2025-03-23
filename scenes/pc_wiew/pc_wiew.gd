@@ -34,6 +34,7 @@ func _ready():
 
 
 func _on_choiche_1_pressed():
+	FmodServer.play_one_shot("event:/SFX_MouseClick")
 	$print.show()
 
 	selected = 0
@@ -43,6 +44,7 @@ func _on_choiche_1_pressed():
 		globals.last_day_choice2 = 0
 
 func _on_choiche_2_pressed():
+	FmodServer.play_one_shot("event:/SFX_MouseClick")
 	$print.show()
 
 	selected = 1 
@@ -52,6 +54,7 @@ func _on_choiche_2_pressed():
 		globals.last_day_choice2 = 1
 
 func _on_choiche_3_pressed():
+	FmodServer.play_one_shot("event:/SFX_MouseClick")
 	$print.show()
 	selected = 2
 	if globals.approved_today == 0:

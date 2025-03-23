@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://t46y6lvi3ksg"
+path="res://.godot/imported/hello 4-Audio (Freeze).wav-ef009ca26eff8e79cbea08b64649f631.sample"
+
+[deps]
+
+source_file="res://FMOD/jamgam/Assets/hello 4-Audio (Freeze).wav"
+dest_files=["res://.godot/imported/hello 4-Audio (Freeze).wav-ef009ca26eff8e79cbea08b64649f631.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -22,9 +22,11 @@ func _process(_delta):
 	if Input.is_action_just_pressed("left_click") and is_dragged == false and draggable: #if mouse is clicked
 		if mouse_in == true: #if mouse is inside the area
 			is_dragged = true
+			FmodServer.play_one_shot("event:/SFX_PickupDocument")
 	if is_dragged: #if is in dragged state
 		if Input.is_action_just_released("left_click"):
 			is_dragged = false #go back to normal state
+			FmodServer.play_one_shot("event:/SFX_PutDownDocument")
 		else:
 			global_position = get_global_mouse_position()
 

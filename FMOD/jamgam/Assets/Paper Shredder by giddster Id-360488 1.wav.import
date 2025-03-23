@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://chdxwi1oqvg2q"
+path="res://.godot/imported/Paper Shredder by giddster Id-360488 1.wav-21458d93d79a1594fcf9adc38a23486c.sample"
+
+[deps]
+
+source_file="res://FMOD/jamgam/Assets/Paper Shredder by giddster Id-360488 1.wav"
+dest_files=["res://.godot/imported/Paper Shredder by giddster Id-360488 1.wav-21458d93d79a1594fcf9adc38a23486c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

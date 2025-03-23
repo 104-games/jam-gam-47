@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://btl2ves0yep2"
+path="res://.godot/imported/shred stand in.mp3-0b3c1d66969c017c2617116c5db9ae64.mp3str"
+
+[deps]
+
+source_file="res://FMOD/jamgam/Assets/shred stand in.mp3"
+dest_files=["res://.godot/imported/shred stand in.mp3-0b3c1d66969c017c2617116c5db9ae64.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

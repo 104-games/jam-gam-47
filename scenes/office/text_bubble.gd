@@ -116,6 +116,7 @@ func _on_timer_timeout():
 		writing = false
 
 func _process(_delta):
+	FmodServer.set_global_parameter_by_name("CharacterTalking", character)
 	if visible:
 		if Input.is_action_just_pressed("left_click"):
 			if writing:

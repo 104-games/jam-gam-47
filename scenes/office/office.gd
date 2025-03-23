@@ -27,7 +27,6 @@ func _on_anim_animation_finished(_anim_name):
 	globals.approved_today = 0
 	$day_start_animation.free()
 
-
 func _on_pc_pressed():
 	if globals.desk_items[globals.current_day].has("document") == false and globals.phone_ringing==false and $text_bubble.visible == false:
 		get_tree().change_scene_to_file("res://scenes/pc_wiew/pc_wiew.tscn")
