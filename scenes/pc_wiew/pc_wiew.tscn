@@ -14,34 +14,32 @@ texture = ExtResource("1_ora4m")
 [node name="choiche" type="RichTextLabel" parent="."]
 offset_left = 281.0
 offset_top = 48.0
-offset_right = 645.0
-offset_bottom = 136.0
+offset_right = 776.0
+offset_bottom = 216.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 text = "placeholde question?"
 
 [node name="choiche1" type="Button" parent="."]
-offset_left = 80.0
-offset_top = 120.0
-offset_right = 258.0
-offset_bottom = 197.0
+offset_left = 64.0
+offset_top = 144.0
+offset_right = 248.0
+offset_bottom = 175.0
 theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
-text = "NO and do 
-the opposite
- [++money, --opinion]"
+text = "N"
 
 [node name="choiche2" type="Button" parent="."]
-offset_left = 392.0
-offset_top = 128.0
-offset_right = 577.0
-offset_bottom = 197.0
+offset_left = 64.0
+offset_top = 224.0
+offset_right = 249.0
+offset_bottom = 255.0
 theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
 text = "yes [-money, +opinion]"
 
 [node name="choiche3" type="Button" parent="."]
-offset_left = 712.0
-offset_top = 128.0
-offset_right = 897.0
-offset_bottom = 197.0
+offset_left = 64.0
+offset_top = 184.0
+offset_right = 249.0
+offset_bottom = 215.0
 theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
 text = "no [+money, -opinion]"
 

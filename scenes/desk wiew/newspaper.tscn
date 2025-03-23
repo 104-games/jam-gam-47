@@ -17,5 +17,13 @@ script = ExtResource("2_gldnv")
 position = Vector2(-1, 0)
 shape = SubResource("RectangleShape2D_8edu4")
 
+[node name="text" type="RichTextLabel" parent="."]
+offset_left = -128.0
+offset_top = -16.0
+offset_right = 96.0
+offset_bottom = 144.0
+mouse_filter = 2
+text = "Mestle workers declare strike again after reciving donations from people all over the world, this time the leader declared `The people of the world are on our side! even the police is helping us! We will SEIZE the factory if needed and change the waste disposal method ourselves!`, police instead of breaking the strike joined the workers."
+
 [connection signal="mouse_entered" from="scanbox" to="." method="_on_scanbox_mouse_entered"]
 [connection signal="mouse_exited" from="scanbox" to="." method="_on_scanbox_mouse_exited"]

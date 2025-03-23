@@ -1,6 +1,6 @@
 extends Node2D
 
-var days = ["MONDAY 8 AM","TUESDAY 8 AM","WEDNESDAY 8 AM","THURSDAY 8 AM","FRIDAY 8 AM","SATURDAY 8 AM","SUNDAY 8 AM"]
+var days = ["FIRST WEEK","SECOND WEEK","THIRD WEEK","FOURTH WEEK","FIFTH WEEK","SIXTH WEEK","EIGHTH WEEK"]
 
 func _ready():
 	print("gg")

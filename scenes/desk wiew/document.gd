@@ -12,8 +12,8 @@ func _process(_delta):
 			if item.get_parent().name == "stamper":
 				$stamp.global_position = item.global_position
 				$stamp.show()
-				globals.pubblic_reputation-=globals.doc_info.x
-				globals.money_level-=globals.doc_info.y
+				globals.pubblic_reputation-=globals.doc_info.y
+				globals.money_level-=globals.doc_info.x
 				globals.approved_today+=1
 				globals.desk_items[globals.current_day].erase("document")
 				if stamp_sound_can_play == true:

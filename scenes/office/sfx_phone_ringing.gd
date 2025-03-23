@@ -4,8 +4,8 @@ var can_play = true
 
 func _process(_delta):
 	var office = get_tree().current_scene
-	var phone_ringing = office.phone_ringing
-	if office.phone_ringing and can_play:
+	var phone_ringing = globals.phone_ringing
+	if globals.phone_ringing and can_play:
 		print("yes")
 		self.play()
 		can_play = false

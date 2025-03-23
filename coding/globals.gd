@@ -1,8 +1,8 @@
 extends Node
 var day
 
-var pubblic_reputation = 1000000
-var money_level = 10000000
+var pubblic_reputation = 10000000000000
+var money_level = 1000000000
 
 var current_day = 0
 

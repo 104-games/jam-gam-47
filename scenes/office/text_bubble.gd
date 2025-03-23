@@ -72,7 +72,16 @@ var dialogues = [[["hey, how's your first day on the job?",
 	
 	["Good call to `gift` something to the media, now they stopped talking",
 	"That was REALLY expensive, but it got us A LOT of good pr, so maybe it was worth it, only time will tell",
-	"We are still making a lot of money, and we didn't loose that much pr!"]],[[]]]
+	"We are still making a lot of money, and we didn't loose that much pr!"]],
+	
+	
+	#day 7
+	[["Well, it's unfortunate our friend had such a strong depression he shot twice!",
+	"WHAT WHERE YOU THINKING, these fking commies, it's almost if they don't care about money!~, you're fired!",
+	"WHAT WERE YOU EVEN HIRED FOR? your job WAS to make sure stuff like this does not happen, you're fired!"],
+	["GOOD JOB, the problem is fixed now, did those stupid workers think they could threaten us?",
+	"Those bastards seazed our factiories when we fired them and the police is protecting them???? this is horrible",
+	"In the end they broke the strike, we lost pr and some money but it could have been worse."]]]
 	
 var dialogue_day2
 
@@ -131,8 +140,8 @@ func _process(_delta):
 					if strings_completed == len(dialogues[globals.current_day][character]):
 						character+=1
 						globals.times_answered_phone +=1
-						if character < 1:
-							phone_ringing.emit()
+						if character <= 1:
+							phone_ringing.emit() 
 							strings_completed = 0
 						hide()
 					else:
@@ -145,4 +154,6 @@ func _process(_delta):
 						start_write()
 						
 					else:
+						if globals.pubblic_reputation < 0 or globals.money_level < 0:
+							get_tree().change_scene_to_file("res://scenes/lost.tscn")
 						hide()
