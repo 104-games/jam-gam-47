@@ -4,8 +4,10 @@ var mouse_in = false
 var is_dragged = false
 var stamp_sound_can_play = true
 
+var draggable = true
+
 func _process(_delta):
-	if Input.is_action_just_released("left_click"):
+	if Input.is_action_just_released("left_click") and $stamp.visible == false:
 		for item in $area.get_overlapping_areas():
 			if item.get_parent().name == "stamper":
 				$stamp.global_position = item.global_position
@@ -17,7 +19,7 @@ func _process(_delta):
 				if stamp_sound_can_play == true:
 					FmodServer.play_one_shot("event:/SFX_Stamp")
 					stamp_sound_can_play = false
-	if Input.is_action_just_pressed("left_click") and is_dragged == false: #if mouse is clicked
+	if Input.is_action_just_pressed("left_click") and is_dragged == false and draggable: #if mouse is clicked
 		if mouse_in == true: #if mouse is inside the area
 			is_dragged = true
 	if is_dragged: #if is in dragged state
@@ -41,3 +43,8 @@ func _on_area_mouse_exited():
 	
 func _exit_tree():
 	stamp_sound_can_play = true
+
+
+func _on_area_area_entered(area):
+	if area.get_parent().name=="stamper":
+		draggable = false

@@ -14,7 +14,7 @@ var conseguences = [#day1
 					#day 2
 					[[Vector2(+3,-3),Vector2(+2,-1),Vector2(0,+2)]]]
 
-var selected 
+var selected = -1
 
 var day = globals.current_day
 func _ready():
@@ -34,28 +34,45 @@ func _ready():
 
 
 func _on_choiche_1_pressed():
-	$current_selected.show()
 	$print.show()
-	$current_selected.text = "selecting this option gives " + str(conseguences[day][globals.approved_today][0].x) + " 
-	pubblic opinion, and " + str(conseguences[day][globals.approved_today][0].y) + " profit rate"
+
 	selected = 0
+	if globals.approved_today == 0:
+		globals.last_day_choice1 = 0
+	else: 
+		globals.last_day_choice2 = 0
 
 func _on_choiche_2_pressed():
-	$current_selected.show()
 	$print.show()
-	$current_selected.text = "selecting this option gives " + str(conseguences[day][globals.approved_today][1].x) + " 
-	pubblic opinion, and " + str(conseguences[day][globals.approved_today][1].y) + " profit rate"
+
 	selected = 1 
+	if globals.approved_today == 0:
+		globals.last_day_choice1 = 1
+	else: 
+		globals.last_day_choice2 = 1
 
 func _on_choiche_3_pressed():
-	$current_selected.show()
 	$print.show()
-	$current_selected.text = "selecting this option gives " + str(conseguences[day][globals.approved_today][2].x) + " 
-	pubblic opinion, and " + str(conseguences[day][globals.approved_today][2].y) + " profit rate"
 	selected = 2
+	if globals.approved_today == 0:
+		globals.last_day_choice1 = 1
+	else: 
+		globals.last_day_choice2 = 1
 
 func _on_print_pressed():
-	FmodServer.play_one_shot("event:/SFX_Print")
-	globals.doc_info = conseguences[day][globals.approved_today][selected]
-	globals.desk_items[day].append("document")
-	get_tree().change_scene_to_file("res://scenes/desk wiew/desk_wiew.tscn")
+	if selected>-1:
+		FmodServer.play_one_shot("event:/SFX_Print")
+		globals.doc_info = conseguences[day][globals.approved_today][selected]
+		globals.desk_items[day].append("document")
+		get_tree().change_scene_to_file("res://scenes/desk wiew/desk_wiew.tscn")
+
+
+func _on_end_pressed():
+	globals.day_just_started = true
+	globals.current_day+=1
+	globals.times_answered_phone = 0
+	get_tree().change_scene_to_file("res://scenes/office/office.tscn")
+
+
+func _on_back_pressed():
+	get_tree().change_scene_to_file("res://scenes/office/office.tscn")

@@ -45,15 +45,6 @@ offset_bottom = 197.0
 theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
 text = "no [+money, -opinion]"
 
-[node name="current_selected" type="RichTextLabel" parent="."]
-visible = false
-offset_left = 360.0
-offset_top = 216.0
-offset_right = 640.0
-offset_bottom = 280.0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-text = "current choiche holder"
-
 [node name="print" type="Button" parent="."]
 offset_left = 368.0
 offset_top = 272.0
@@ -69,6 +60,13 @@ offset_right = 568.0
 offset_bottom = 264.0
 text = "GO HOME"
 
+[node name="back" type="Button" parent="."]
+offset_left = 56.0
+offset_top = 32.0
+offset_right = 120.0
+offset_bottom = 56.0
+text = "BACK"
+
 [node name="sfx_pc_hum" type="FmodEventEmitter2D" parent="."]
 event_name = "event:/PC_Hum"
 event_guid = "{7c8f45c2-580f-489e-8217-af260ad638ac}"
@@ -78,3 +76,5 @@ autoplay = true
 [connection signal="pressed" from="choiche2" to="." method="_on_choiche_2_pressed"]
 [connection signal="pressed" from="choiche3" to="." method="_on_choiche_3_pressed"]
 [connection signal="pressed" from="print" to="." method="_on_print_pressed"]
+[connection signal="pressed" from="end" to="." method="_on_end_pressed"]
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]

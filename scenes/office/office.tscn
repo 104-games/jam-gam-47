@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://e4f8q4nvueie"]
 
-[ext_resource type="Texture2D" uid="uid://c0ovm20nk00ks" path="res://assets/graphics/main window/bg_placeholder.png" id="1_ql6sr"]
 [ext_resource type="Script" uid="uid://uyst3i6mij2j" path="res://scenes/office/office.gd" id="1_ul364"]
+[ext_resource type="Texture2D" uid="uid://bge3qgr3ocplf" path="res://assets/graphics/main window/bgoffice.png" id="2_art4y"]
 [ext_resource type="Texture2D" uid="uid://chtylad0kw077" path="res://assets/graphics/main window/phone_placeholder.jpg" id="3_66du1"]
 [ext_resource type="Texture2D" uid="uid://da2ieywc1gedp" path="res://assets/graphics/main window/text_bubble_placheholder.jpg" id="4_art4y"]
 [ext_resource type="Script" uid="uid://c7gvq241mxs5e" path="res://scenes/office/text_bubble.gd" id="5_8d8gp"]
@@ -96,26 +96,26 @@ _data = {
 script = ExtResource("1_ul364")
 
 [node name="bg" type="Sprite2D" parent="."]
-position = Vector2(481.5, 271.5)
-scale = Vector2(0.895814, 0.889803)
-texture = ExtResource("1_ql6sr")
+position = Vector2(480.009, 272)
+scale = Vector2(0.49999, 0.501852)
+texture = ExtResource("2_art4y")
 
 [node name="to_desk" type="Button" parent="."]
-offset_left = 587.0
-offset_top = 249.0
-offset_right = 771.0
-offset_bottom = 427.0
+offset_left = 628.0
+offset_top = 233.0
+offset_right = 762.0
+offset_bottom = 468.0
 flat = true
 
 [node name="answer_phone" type="Button" parent="."]
-offset_left = 601.0
-offset_top = 373.0
-offset_right = 640.0
-offset_bottom = 415.0
+offset_left = 640.0
+offset_top = 391.0
+offset_right = 685.0
+offset_bottom = 438.0
 flat = true
 
 [node name="Sprite2D" type="Sprite2D" parent="answer_phone"]
-position = Vector2(16, 18)
+position = Vector2(19, 27)
 scale = Vector2(0.043, 0.0526693)
 texture = ExtResource("3_66du1")
 
@@ -138,11 +138,11 @@ theme_override_colors/default_color = Color(0, 0, 0, 1)
 text = "sium"
 
 [node name="pc" type="Button" parent="."]
-offset_left = 679.0
-offset_top = 324.0
-offset_right = 713.0
-offset_bottom = 412.0
-rotation = -2.61625
+offset_left = 714.0
+offset_top = 327.0
+offset_right = 754.0
+offset_bottom = 395.0
+rotation = -3.12239
 flat = true
 
 [node name="day_start_animation" type="Node2D" parent="."]
@@ -161,6 +161,7 @@ offset_right = 831.0
 offset_bottom = 374.0
 theme_override_font_sizes/normal_font_size = 100
 text = "MONDAY 8 AM"
+fit_content = true
 
 [node name="anim" type="AnimationPlayer" parent="day_start_animation"]
 libraries = {

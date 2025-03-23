@@ -23,6 +23,7 @@ func _process(_delta):
 			global_position = get_global_mouse_position() #set position to mouse pos
 	if mouse_in:
 		if Input.is_action_just_released("right_click"):
+			print(mouse_in)
 			if is_zoomed:
 				scale/=1.5
 				unzoomed.emit()

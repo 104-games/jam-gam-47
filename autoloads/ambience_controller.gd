@@ -5,15 +5,15 @@ func _process(_delta):
 	if current_scene:
 		var root_name = current_scene.name
 		if root_name == "office":
-			print("office")
+			
 			FmodServer.set_global_parameter_by_name("AmbienceVolume", 1)
 			FmodServer.set_global_parameter_by_name("AmbienceFilter", 0)
 		elif root_name == "desk_wiew":
-			print("desk")
+			
 			FmodServer.set_global_parameter_by_name("AmbienceVolume", 0.8)
 			FmodServer.set_global_parameter_by_name("AmbienceFilter", 0)
 		elif root_name == "pc_wiew":
-			print("pc")
+			
 			FmodServer.set_global_parameter_by_name("AmbienceVolume", 0.8)
 			FmodServer.set_global_parameter_by_name("AmbienceFilter", 0.7)
 		else:
@@ -21,6 +21,6 @@ func _process(_delta):
 			FmodServer.set_global_parameter_by_name("AmbienceFilter", 0)
 			
 	else:
-		print("No current scene found!")
+		pass
 	
 	
