@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ddd4pucwymqp1"
+path="res://.godot/imported/Guns, Mechanism, Plastic Toy Gun, Rifle Bullet, Drum Rotation, Snap 02 SND130807.wav-1fd45672d794a33e6ab8d383ed9c74d1.sample"
+
+[deps]
+
+source_file="res://FMOD/jamgam/Assets/Guns, Mechanism, Plastic Toy Gun, Rifle Bullet, Drum Rotation, Snap 02 SND130807.wav"
+dest_files=["res://.godot/imported/Guns, Mechanism, Plastic Toy Gun, Rifle Bullet, Drum Rotation, Snap 02 SND130807.wav-1fd45672d794a33e6ab8d383ed9c74d1.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

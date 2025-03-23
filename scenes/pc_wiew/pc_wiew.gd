@@ -34,6 +34,7 @@ func _ready():
 
 
 func _on_choiche_1_pressed():
+	FmodServer.play_one_shot("event:/SFX_MouseClick")
 	$current_selected.show()
 	$print.show()
 	$current_selected.text = "selecting this option gives " + str(conseguences[day][globals.approved_today][0].x) + " 
@@ -41,6 +42,7 @@ func _on_choiche_1_pressed():
 	selected = 0
 
 func _on_choiche_2_pressed():
+	FmodServer.play_one_shot("event:/SFX_MouseClick")
 	$current_selected.show()
 	$print.show()
 	$current_selected.text = "selecting this option gives " + str(conseguences[day][globals.approved_today][1].x) + " 
@@ -48,6 +50,7 @@ func _on_choiche_2_pressed():
 	selected = 1 
 
 func _on_choiche_3_pressed():
+	FmodServer.play_one_shot("event:/SFX_MouseClick")
 	$current_selected.show()
 	$print.show()
 	$current_selected.text = "selecting this option gives " + str(conseguences[day][globals.approved_today][2].x) + " 
