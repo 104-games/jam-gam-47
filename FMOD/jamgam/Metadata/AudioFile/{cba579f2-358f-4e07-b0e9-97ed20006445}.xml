@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{cba579f2-358f-4e07-b0e9-97ed20006445}">
+		<property name="assetPath">
+			<value>hello 3-Audio (Freeze).wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.59999999999999998</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b1284e37-b7c9-431d-be70-a50731d459ad}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -40,6 +40,17 @@ autoplay = "default"
 position = Vector2(0, 1.5)
 shape = SubResource("RectangleShape2D_tokc7")
 
+[node name="text" type="RichTextLabel" parent="."]
+visible = false
+offset_left = -192.0
+offset_top = -160.0
+offset_right = 208.0
+offset_bottom = 176.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 20
+text = "Hi mister pubblic relations, I am a reporter, don't mind trying to figure out who, and i am going to expose the damage your company is doing to the envirovment, you either help me and become an hero or stay at your shitty job and go down rich but as a monster. Now 25 people have died in the amazon, 17 were kids, experts prediceted that the land will remain inlivable for at least two centuries, do the right thing."
+
 [connection signal="animation_finished" from="envelope" to="." method="_on_envelope_animation_finished"]
 [connection signal="mouse_entered" from="scanbox" to="." method="_on_scanbox_mouse_entered"]
 [connection signal="mouse_exited" from="scanbox" to="." method="_on_scanbox_mouse_exited"]

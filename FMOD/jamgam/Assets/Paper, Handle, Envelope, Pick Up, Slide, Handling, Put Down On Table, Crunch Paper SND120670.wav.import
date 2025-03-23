@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dy68gh1o0p5l6"
+path="res://.godot/imported/Paper, Handle, Envelope, Pick Up, Slide, Handling, Put Down On Table, Crunch Paper SND120670.wav-ee1ea0afe186273b7264b9bf5c3f453b.sample"
+
+[deps]
+
+source_file="res://FMOD/jamgam/Assets/Paper, Handle, Envelope, Pick Up, Slide, Handling, Put Down On Table, Crunch Paper SND120670.wav"
+dest_files=["res://.godot/imported/Paper, Handle, Envelope, Pick Up, Slide, Handling, Put Down On Table, Crunch Paper SND120670.wav-ee1ea0afe186273b7264b9bf5c3f453b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

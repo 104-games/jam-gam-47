@@ -6,10 +6,12 @@ var to_remove = []
 func _process(delta):
 	if Input.is_action_just_released("left_click") and mouse_in:
 		for item in $scanarea.get_overlapping_areas():
+			FmodServer.play_one_shot("event:/SFX_Shred")
 			print(item.get_parent().name)
 			to_remove.append(item.get_parent().name)
 			item.get_parent().free()
 			play("shred")
+			print("shred")
 		for x in to_remove:
 			if x == "newspaper":
 				globals.desk_items[globals.current_day].erase("newspaper")
