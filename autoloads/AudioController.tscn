@@ -20,3 +20,8 @@ script = ExtResource("1_dfi2g")
 
 [node name="SFXController" type="Node" parent="."]
 script = ExtResource("2_l8rlk")
+
+[node name="Music" type="FmodEventEmitter2D" parent="."]
+event_name = "event:/game music"
+event_guid = "{83e6ed49-0575-4d5f-96af-28e5a4cd4ec4}"
+autoplay = true
